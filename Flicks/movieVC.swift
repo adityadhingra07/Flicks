@@ -22,7 +22,7 @@ class movieVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: infoview.frame.size.height + infoview.frame.origin.y)
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: infoview.frame.size.height + infoview.frame.origin.y + 50)
         
         titleLabel.text = movie["title"] as! String
         overview.text = movie["overview"] as! String
